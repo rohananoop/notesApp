@@ -11,15 +11,19 @@ A Notes app with Clerk authentication.
 ## Setup
 
 ### Backend
+```
 cd backend
 npm install
 npx prisma generate
 npm run dev
+```
 
 ### Frontend
+```
 cd frontend
 npm install
 npm run dev
+```
 
 ## Environment Variables
-Copy .env.example to .env in both backend/ and frontend/ and fill in your keys.
+make eg.env to .env in both backend/ and frontend/ and fill in your keys.
