@@ -1,11 +1,11 @@
 # Notes App — MERN Stack
 
-A Notes app with Clerk authentication.
+A Personal Notes app with Clerk authentication.
 
 ## Team
-- Rohan — Backend foundation
+- Rohan — Backend 
 - Pranav — API routes & auth middleware
-- Niranjan — Frontend core & routing
+- Niranjan — Frontend & routing
 - Sreya — Notes UI & styling
 
 ## Setup
