@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
+import { clerkMiddleware } from "@clerk/express";   // <-- ADD THIS IMPORT
 import noteRoutes from "./routes/note.routes.js";
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.use(clerkMiddleware());                          // <-- ADD THIS LINE
 
 app.use("/api/notes", noteRoutes);
 
@@ -31,4 +33,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
-
