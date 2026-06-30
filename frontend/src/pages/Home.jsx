@@ -4,7 +4,8 @@ import axios from "axios";
 import NoteCard from "../components/NoteCard.jsx";
 import NoteForm from "../components/NoteForm.jsx";
 
-const API_BASE = "http://localhost:5000/api/notes";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api/notes";
+
 
 export default function Home() {
   const { getToken } = useAuth();
